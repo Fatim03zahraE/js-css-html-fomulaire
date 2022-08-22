@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   <link rel="stylesheet" href="for.css">
+    <script type="text/javascript" src="form.js" async></script>
+</head>
+<body>
+  <p id="maint"></p>
+<form name="INSCRIPTION">
+<fieldset>
+<legend class="re"><h2>INSCRIPTION</h2></legend>
+<table>
+<tr>
+  <td><b><label for="">Nom</label><span style="color:#FF0000" required>*</span></b></td>
+  <td><input type="text" id="nome"></td>
+  <td><p id="error1"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Prenom</label><span  style="color:#FF0000"  required>*</span></b></td>
+  <td><input type="text" id="lastname"></td>
+  <td><p id="error2"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Date de naissance</label><span  style="color:#FF0000">*</span></b></td>
+  <td><input type="date" id="age"></td> 
+  <td><p id="error3"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Code Postal</label><span  style="color:#FF0000">*</span></b></td>
+  <td><input type="text" id="cp"></td> 
+</td><td><p id="error4"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Pays</label><span style="color:#FF0000">*</span></b></td>
+  <td>
+<select name="" id="sele">
+<option value="">Please select</option>
+<option value="I">Maroc</option>
+<option value="B">France</option>
+<option value="C">Italie</option>
+</select>
+  </td><td><p id="error5"></p></td>
+</tr>
+<tr>
+<td><b><label for="">Genre</label><span  style="color:#FF0000">*</span></b></td>
+<td>
+<input id="mas" type="radio" name="f">Masculin
+<input id="fem" type="radio" name="f">Féminin
+  </td>
+  <td><p id="error6"></p></td>
+</tr>
+<tr>
+ <td><b><label for="">Préférences de contact</label><span  style="color:#FF0000">*</span></b></td>
+ <td>
+<input id="fax" type="checkbox" name="z">Fax
+<input id="em" type="checkbox" name="z">Email
+<input id="tele" type="checkbox" name="z">Téléphone
+ </td>
+ 
+</td><td><p id="error7"></p></td>
+</tr>
+<tr>
+ <td><b><label for="">Email</label><span  style="color:#FF0000">*</span></b></td>
+ <td><input type="email" id="email" placeholder="exemple@abc.gkj"></td>
+ <td><p id="error8"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Password(6-8 characteres)</label><span  style="color:#FF0000">*</span></b></td>
+ <td><input type="password" id="mdp"></td>
+ <td><p id="error9"></p></td>
+</tr>
+<tr>
+  <td><b><label for="">Vérification password</label><span  style="color:#FF0000">*</span></b></td>
+  <td><input type="password" id="vmdp"></td>
+  <td><p id="error10"></p></td>
+</tr>
+<tr>
+  <td></td>
+  <td><input type="button" value="Envoyer" onclick="verifi()">
+  <input type="reset" value="Effacer"></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</body>
+</html>
