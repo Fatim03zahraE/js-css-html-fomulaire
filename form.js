@@ -38,7 +38,7 @@ function vage() {
   let dat=document.getElementById('age').value;
   let err3 = document.getElementById('error3');
   let ag = new Date().getFullYear()- new Date(dat).getFullYear();
-  if (ag < 17 || dat=="") {
+  if (ag < 18 || dat=="") {
     err3.innerText = '×non admis×'
     err3.style.color="red"
     return false;
